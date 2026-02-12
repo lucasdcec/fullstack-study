@@ -1,0 +1,137 @@
+* {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.notebookDEV {
+  width: 550px; /* Tamanho similar à montanha da referência */
+  margin-top: 50px; /* Espaço entre o seu texto e o notebook */
+  display: inline-block; /* Garante que ele se comporte como um bloco centralizado */
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-container {
+  background-color: #e4f9f5;
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden; /* Garante que nada escape das bordas */
+}
+
+/* A "mágica" para restringir o espaço horizontal */
+.wrapper {
+  max-width: 900px; /* Largura máxima do seu conteúdo */
+  margin: 0 auto; /* Centraliza o bloco na tela */
+  padding: 40px 20px;
+  background-color: white; /* Opcional: destaca o corpo do site */
+}
+.fotoPerfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.imagemCompetencia {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.notebookDEV {
+  /* width: 170 px; */
+  height: 400px;
+  object-fit: contain;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.imagemDestaque {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+/* Mantenha o grid para container */
+.grid-habilidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Cria 2 colunas */
+  gap: 20px;
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+  width: 100%;
+  max-width: 1000px; /* Evita que o grid fique largo demais */
+  margin: 0 auto;
+}
+
+.grid-habilidades li {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex; /* Aqui sim o flex é útil para alinhar o conteúdo interno */
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgb(66, 6, 233);
+  border-radius: 50px;
+  padding: 15px 35px;
+  color: white !important;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgba(67, 6, 233, 0.486);
+}
+
+footer {
+  background-color: rgba(0, 0, 255, 0.637);
+  width: 100%;
+  color: white;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column; /* Garante que a lista e o texto © fiquem um sob o outro */
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+}
+footer li {
+  display: inline;
+}
+
+footer {
+  background-color: #e4f9f5;
+  padding: 50px 0;
+  color: #11999e; /* Cor escura para leitura */
+}
+
+footer a {
+  text-decoration: none;
+  color: #11999e;
+  margin: 0 15px; /* Espaço nas laterais de cada link */
+  display: inline-block; /* Permite que fiquem lado a lado */
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
